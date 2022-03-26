@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player | JS</title>
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/ce1efe476e.js" crossorigin="anonymous"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="player">
+
+        <h5 class="player__state"></h5>
+
+        <img class="player__cover" src="./images/amir.jpg" alt="">
+
+        <h3 class="player__title">Amir :)</h3>
+
+        <input type="range" id="palyer__bar" class="player__bar" value="0">
+
+        <div class="player__btns">
+            <span class="btn" id="pre"><i class="fas fa-backward"></i></span>
+            <span class="btn" id="play"><i class="fas fa-play"></i></span>
+            <span class="btn" id="next"><i class="fas fa-forward"></i></span>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

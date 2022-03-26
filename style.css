@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Nunito:wght@300&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #cfcfcf;
+    font-family: 'Nunito';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/******************************/
+.player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: snow;
+    margin-top: 50px;
+    border-radius: 40px;
+    box-shadow: -3px -3px 7px rgba(255, 255, 255, 0.8) , 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.player__state {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.player__cover {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid rgb(255, 255, 255);
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+}
+
+.player__title {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+input[type="range"] {
+    margin: 20px;
+    appearance: none;
+    width: 300px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    background-color: rgb(160, 160, 160);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.player__btns {
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+
+.player__btns span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2) , -6px -6px 10px rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.player__btns span i {
+    font-size: 20px;
+}
